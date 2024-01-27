@@ -36,8 +36,8 @@ python3 OAuth_Phishing.py [-h] [-m] [-s Sender_email] [-p Sender_password] [-r R
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/Vishal-Raj007/OAuth-Device-Code-Phishing.git 
+cd OAuth-Device-Code-Phishing
 ```
 2. Install dependencies:
 ```
