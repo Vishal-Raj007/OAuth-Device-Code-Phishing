@@ -114,7 +114,7 @@ class OAuthPhishing(TextColor):
     self.response02 = None
     try:
       self.response02 = requests.post("https://login.microsoftonline.com/common/oauth2/token?api-version=1.0", data=body)
-    except self.requests.RequestException as e:
+    except requests.exceptions.RequestException as e:
       print(TextColor.RED + f"[-] An error occurred:{e}" + TextColor.RESET)
       return None
 
