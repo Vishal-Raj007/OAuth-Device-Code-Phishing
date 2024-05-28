@@ -71,7 +71,7 @@ class OAuthPhishing(TextColor):
         print(TextColor.CYAN + "[+] Auth response saved to auth_response.json\n" + TextColor.RESET)
         return self.auth_response
     else:
-        print(TextColor.RED + f"[-] Request failed with status code {response.status_code}"+ TextColor.RESET)
+        print(TextColor.RED + f"[-] Request failed with status code {self.response01.status_code}"+ TextColor.RESET)
         return None
 
   def send_mail(self, sender_email, receiver_email, password, name):
